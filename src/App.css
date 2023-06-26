@@ -1,38 +1,57 @@
-.App {
+.outerBoard{
   text-align: center;
+  height:700px;
+  padding: 10px;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.board {
+  width: 450px;
+  height: 450px;
+  border: 5px solid black;
+  background-color: black;
+  margin: 0px auto;
+  
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.row{
+  width: 450px;
+  height: 150px;
 }
+.col {
+  width: 140px;
+  height: 140px;
+  float:left;
+  margin: 5px;
+  background-color: white;
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  font-size: 100px;
+  line-height: 130px;
+  font-weight:bold;
+  color:red;
+  text-shadow: 1px 1px 5px black; 
+
 }
-
-.App-link {
-  color: #61dafb;
+.image1{
+  width: 180px;
+  height: 180px;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.hint
+{
+  text-align: center;
+  background-color: black;
+  color:white;
+  font-size: 50px;
+  width: 500px;
+  margin: 0px auto;
+}
+.restartBtn {
+  border: 2px dotted gray;
+  outline: 0px;
+  background-color: teal;
+  color: black;
+  padding: 5px;
+  font-size: 22px;
+  color:white;
+}
+.restartBtn:hover{
+  background-color: yellow;
+  color:black;
 }
